@@ -1,0 +1,124 @@
+
+
+.wrap {
+	width: 1140px;
+	margin: 0 auto 80px;
+    padding: 65px 292px;
+	border: 1px solid #EAEAEA;
+}
+
+.slider {
+	background-color: #F7F7F7;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+    height: 777px;
+		
+		&-btn {
+        background: rgba(42, 42, 42, 0.15);
+		padding: 12px 17px;
+		position: absolute;
+        border: none;
+
+        & svg {
+            fill: #000;
+        }
+
+			&:hover {
+				background-color: lightgray;
+                & svg {
+                    fill: $navigation-color;
+                }
+			}
+			&:active {
+				background-color: #000;
+			}
+			
+			&-left {
+				left: 5px;
+			}
+			
+			&-right {
+				right: 5px;
+			}
+	}
+}
+
+.about {
+    &-wrap {
+	background-color: #fff;
+	margin-top: - $shift;
+	position: relative; /* чтобы блок был над, а не под */
+    
+}
+
+&__text {
+    border-bottom: 1px solid #EAEAEA;
+    text-align: center;
+    padding-bottom: 65px;
+    & h3 {
+        @include font-text ($navigation-color);
+        margin-bottom: 12px;
+    }
+
+    & hr {
+        width: 63px;
+        height: 3px;
+        border: none;
+        background-color: $main-color;
+        margin: 0 auto 12px;
+    }
+
+    & h4 {
+        @include product-zag (#4D4D4D);
+        margin-bottom: 48px;
+    }
+
+    & p {
+        @include font-text (#5E5E5E);
+        margin-bottom: 32px;
+    }
+
+    & span {
+        font-weight: 300;
+        font-size: 24px;
+        line-height: 29px;
+        color: $main-color;
+    }
+}
+}
+
+.product__filter {
+    padding-top: 65px;
+    padding-bottom: 49px;
+    display: flex;
+    justify-content: center;
+}
+
+.product__cart {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    & a {
+        font-size: 16px;
+        line-height: 19px;
+        text-align: center;
+        color: #F26376;
+        border: 1px solid #F26376;
+        padding: 15px 39px;
+        background-color: transparent;
+        text-decoration: none;
+        align-self: center;
+    }
+
+    & svg {
+        margin-right: 23px;
+    }
+
+}
+
+.card-main--margin {
+    margin-bottom: 98px;
+}
