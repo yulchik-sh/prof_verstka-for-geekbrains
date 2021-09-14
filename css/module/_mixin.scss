@@ -1,0 +1,13 @@
+@mixin font-text ($text-color) {
+    color: $text-color;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+}
+
+@mixin product-zag ($text-color) {
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 22px;
+    color: $text-color;
+}
